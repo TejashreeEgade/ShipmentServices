@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ShipmentDbContext>(options =>
     options.UseSqlServer(
-        builder.Configuration.GetConnectionString("ABH_health")));
+        builder.Configuration.GetConnectionString("ShipmentService")));
 
 var app = builder.Build();
 
